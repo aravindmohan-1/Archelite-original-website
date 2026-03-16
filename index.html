@@ -163,27 +163,132 @@
 
    <!-- about
    
-   <!-- stats
+   <!-- clients
    ================================================== -->
    <section id="clients">
 
+      <style>
+         #clients {
+            padding: 60px 0;
+            background: #fff;
+         }
+         #clients h3 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.4rem;
+            color: #333;
+         }
+         .marquee-wrapper {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+         }
+         .marquee-wrapper::before,
+         .marquee-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 120px;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none;
+         }
+         .marquee-wrapper::before {
+            left: 0;
+            background: linear-gradient(to right, #ffffff 0%, transparent 100%);
+         }
+         .marquee-wrapper::after {
+            right: 0;
+            background: linear-gradient(to left, #ffffff 0%, transparent 100%);
+         }
+         .marquee-track {
+            display: flex;
+            width: max-content;
+            animation: marquee-scroll 35s linear infinite;
+         }
+         .marquee-track:hover {
+            animation-play-state: paused;
+         }
+         @keyframes marquee-scroll {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+         }
+         .marquee-item {
+            flex-shrink: 0;
+            width: 160px;
+            height: 80px;
+            margin: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+         .marquee-item img {
+            max-width: 140px;
+            max-height: 64px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.65;
+            transition: filter 0.3s ease, opacity 0.3s ease;
+         }
+         .marquee-item img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+         }
+      </style>
+
 		<div class="row animate-this">
 			<div class="col-twelve">
-				<h3 class="animate-this">Trusted by companies of all size and passionate individuals</h3>
-				<div class="client-lists owl-carousel">
-  					<div><img src="images/clients/angular.png" alt=""></div>
-  					<div><img src="images/clients/bower.png" alt=""></div>
-  					<div><img src="images/clients/codepen.png" alt=""></div>
-  					<div><img src="images/clients/envato.png" alt=""></div>
-  					<div><img src="images/clients/firefox.png" alt=""></div>
-  					<div><img src="images/clients/grunt.png" alt=""></div>
-  					<div><img src="images/clients/evernote.png" alt=""></div>
-  					<div><img src="images/clients/github.png" alt=""></div>
-  					<div><img src="images/clients/joomla.png" alt=""></div>
-  					<div><img src="images/clients/buffer.png" alt=""></div>
-  					<div><img src="images/clients/dropbox.png" alt=""></div>
-				</div>
-				
+				<h3>Trusted by industry leaders across India</h3>
+            <div class="marquee-wrapper">
+               <div class="marquee-track">
+                  <!-- Set 1 -->
+                  <div class="marquee-item"><img src="images/clients-new/dlf.png" alt="DLF"></div>
+                  <div class="marquee-item"><img src="images/clients-new/larsen-toubro.png" alt="Larsen & Toubro"></div>
+                  <div class="marquee-item"><img src="images/clients-new/shapoorji.png" alt="Shapoorji Pallonji"></div>
+                  <div class="marquee-item"><img src="images/clients-new/jll.png" alt="JLL"></div>
+                  <div class="marquee-item"><img src="images/clients-new/saint-gobain.png" alt="Saint-Gobain"></div>
+                  <div class="marquee-item"><img src="images/clients-new/turner.png" alt="Turner Construction"></div>
+                  <div class="marquee-item"><img src="images/clients-new/k-raheja.png" alt="K Raheja"></div>
+                  <div class="marquee-item"><img src="images/clients-new/birla-opus.png" alt="Birla Opus"></div>
+                  <div class="marquee-item"><img src="images/clients-new/pacifica.png" alt="Pacifica"></div>
+                  <div class="marquee-item"><img src="images/clients-new/phoenix.jpg" alt="Phoenix"></div>
+                  <div class="marquee-item"><img src="images/clients-new/asbl.png" alt="ASBL"></div>
+                  <div class="marquee-item"><img src="images/clients-new/divyasree.png" alt="Divyasree"></div>
+                  <div class="marquee-item"><img src="images/clients-new/apcrda.png" alt="APCRDA"></div>
+                  <div class="marquee-item"><img src="images/clients-new/aiims.png" alt="AIIMS"></div>
+                  <div class="marquee-item"><img src="images/clients-new/auro.png" alt="Auro"></div>
+                  <div class="marquee-item"><img src="images/clients-new/spcl.png" alt="SPCL"></div>
+                  <div class="marquee-item"><img src="images/clients-new/tpl.png" alt="TPL"></div>
+                  <div class="marquee-item"><img src="images/clients-new/rfcl.jpg" alt="RFCL"></div>
+                  <div class="marquee-item"><img src="images/clients-new/ffil.png" alt="FFIL"></div>
+                  <div class="marquee-item"><img src="images/clients-new/vasavi.webp" alt="Vasavi Group"></div>
+                  <div class="marquee-item"><img src="images/clients-new/daco.png" alt="Daco"></div>
+                  <!-- Set 2 — exact duplicate for seamless loop -->
+                  <div class="marquee-item"><img src="images/clients-new/dlf.png" alt="DLF"></div>
+                  <div class="marquee-item"><img src="images/clients-new/larsen-toubro.png" alt="Larsen & Toubro"></div>
+                  <div class="marquee-item"><img src="images/clients-new/shapoorji.png" alt="Shapoorji Pallonji"></div>
+                  <div class="marquee-item"><img src="images/clients-new/jll.png" alt="JLL"></div>
+                  <div class="marquee-item"><img src="images/clients-new/saint-gobain.png" alt="Saint-Gobain"></div>
+                  <div class="marquee-item"><img src="images/clients-new/turner.png" alt="Turner Construction"></div>
+                  <div class="marquee-item"><img src="images/clients-new/k-raheja.png" alt="K Raheja"></div>
+                  <div class="marquee-item"><img src="images/clients-new/birla-opus.png" alt="Birla Opus"></div>
+                  <div class="marquee-item"><img src="images/clients-new/pacifica.png" alt="Pacifica"></div>
+                  <div class="marquee-item"><img src="images/clients-new/phoenix.jpg" alt="Phoenix"></div>
+                  <div class="marquee-item"><img src="images/clients-new/asbl.png" alt="ASBL"></div>
+                  <div class="marquee-item"><img src="images/clients-new/divyasree.png" alt="Divyasree"></div>
+                  <div class="marquee-item"><img src="images/clients-new/apcrda.png" alt="APCRDA"></div>
+                  <div class="marquee-item"><img src="images/clients-new/aiims.png" alt="AIIMS"></div>
+                  <div class="marquee-item"><img src="images/clients-new/auro.png" alt="Auro"></div>
+                  <div class="marquee-item"><img src="images/clients-new/spcl.png" alt="SPCL"></div>
+                  <div class="marquee-item"><img src="images/clients-new/tpl.png" alt="TPL"></div>
+                  <div class="marquee-item"><img src="images/clients-new/rfcl.jpg" alt="RFCL"></div>
+                  <div class="marquee-item"><img src="images/clients-new/ffil.png" alt="FFIL"></div>
+                  <div class="marquee-item"><img src="images/clients-new/vasavi.webp" alt="Vasavi Group"></div>
+                  <div class="marquee-item"><img src="images/clients-new/daco.png" alt="Daco"></div>
+               </div>
+            </div>
 			</div> <!-- end col-twelve -->
 		</div> <!-- end row -->
 
