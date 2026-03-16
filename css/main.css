@@ -30,8 +30,8 @@
  *  01. webfonts and iconfonts - (_document-setup)
  *
  * ------------------------------------------------------------------- */
-@import url("font-awesome/css/font-awesome.min.css");
-@import url("micons/micons.css");
+/* font-awesome loaded via CDN in index.html */
+@import url("micons/micons.css"); /* icomoon font - icons only used in commented-out portfolio section */
 @import url("fonts.css");
 
 

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700&display=swap');
+
+@font-face {
+    font-family: "librebaskerville-regular";
+    src: local("Libre Baskerville");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "librebaskerville-italic";
+    src: local("Libre Baskerville");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "librebaskerville-bold";
+    src: local("Libre Baskerville");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "montserrat-regular";
+    src: local("Montserrat");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "montserrat-bold";
+    src: local("Montserrat");
+    font-weight: 700;
+    font-style: normal;
+}
